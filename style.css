@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.primary-color{
+    background: blueviolet;
+    color: white;
+}
+.secondary-color{
+    background: lightgrey;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+body{
+    font-family: 'Truculenta', sans-serif;
+    position: relative;
+    background-image: radial-gradient(  yellow, black,);
+    background-repeat: no-repeat;
+}
+
+h1{
+    text-align: center;
+}
+
+/* DIRECTIONAL PAD */
+.d-pad{
+    background: grey;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;  
+    border-radius: 50%;  
+}
+
+
+#d-up{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translatex(-50%);
+}
+
+#d-up-right{
+    position: absolute;
+    left: 68%;
+    top: 18%;
+    transform: rotate(45deg);
+}
+
+#d-right{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#d-down-right{
+    position: absolute;
+    left: 68%;
+    bottom: 18%;
+    transform: rotate(45deg);
+}
+
+#d-down{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translatex(-50%);
+}
+
+#d-down-left{
+    position: absolute;
+    right: 68%;
+    bottom: 18%;
+    transform: rotate(45deg);
+}
+
+#d-left{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#d-up-left{
+    position: absolute;
+    right: 68%;
+    top: 18%;
+    transform: rotate(45deg);
+}
+
+
+
+/* ARENA */
+#arena{
+    height: 90vh;
+    width: 90vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+#timer{
+    width: 75px;
+    height: 50px;
+    background: grey;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FIGHTERS */
+.ball{
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+#ball-1{
+    background: green;
+    left: 25%;
+    top: 45%;
+    box-shadow: 5px -5px 10px 1px  inset;
+}
+#ball-2{
+    background: red;
+    right: 25%;
+    top: 45%;
+    box-shadow: -5px -5px 10px 1px inset;
+}
+
+h1{
+    text-align: center;
+}
+
+#fighter-details-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fighter-details{
+    list-style-position: inside;
+    background: lightgrey;
+    padding: 1em;
+    width: 20vw;
+    text-align: center;
+}
+
+#show-contender{
+    padding: 1.5em;
+}
